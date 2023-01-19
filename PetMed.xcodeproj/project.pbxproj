@@ -7,23 +7,85 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		036B13CA053FF47F4046E2A7 /* Pods_PetMed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96229CC92D24C29892B7BBD9 /* Pods_PetMed.framework */; };
+		DC763D402971C050009833AE /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC763D3F2971C050009833AE /* LoadingViewController.swift */; };
 		DCAA05C1296988E100B73039 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA05C0296988E100B73039 /* AppDelegate.swift */; };
 		DCAA05C3296988E100B73039 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA05C2296988E100B73039 /* SceneDelegate.swift */; };
-		DCAA05C5296988E100B73039 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA05C4296988E100B73039 /* ViewController.swift */; };
+		DCAA05C5296988E100B73039 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA05C4296988E100B73039 /* LoginViewController.swift */; };
 		DCAA05C8296988E100B73039 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCAA05C6296988E100B73039 /* Main.storyboard */; };
 		DCAA05CA296988E400B73039 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCAA05C9296988E400B73039 /* Assets.xcassets */; };
 		DCAA05CD296988E400B73039 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCAA05CB296988E400B73039 /* LaunchScreen.storyboard */; };
+		DCAA05D529698D4400B73039 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA05D429698D4400B73039 /* Extensions.swift */; };
+		DCAA05D72969905800B73039 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA05D62969905800B73039 /* MainViewController.swift */; };
+		DCAA05D9296994AE00B73039 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA05D8296994AE00B73039 /* TabBarController.swift */; };
+		DCEA6C33296B0824008FB926 /* PetsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEA6C32296B0824008FB926 /* PetsTableViewCell.swift */; };
+		DCEA6C35296B424F008FB926 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEA6C34296B424F008FB926 /* SettingsViewController.swift */; };
+		DCEA6C37296B4559008FB926 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEA6C36296B4559008FB926 /* SettingsTableViewCell.swift */; };
+		DCEA6C39296B4F35008FB926 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEA6C38296B4F35008FB926 /* ContentViewController.swift */; };
+		DCEA6C3B296C876A008FB926 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEA6C3A296C876A008FB926 /* ScheduleViewController.swift */; };
+		DCEA6C3F296C8B90008FB926 /* UpcomingVisitsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEA6C3E296C8B90008FB926 /* UpcomingVisitsTableViewCell.swift */; };
+		DCEA6C43296DF6B4008FB926 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DCEA6C42296DF6B4008FB926 /* GoogleService-Info.plist */; };
+		DCEBFE412973055800F091C7 /* Vet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEBFE402973055800F091C7 /* Vet.swift */; };
+		DCEBFE4329733A0400F091C7 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEBFE4229733A0400F091C7 /* ResultViewController.swift */; };
+		DCEBFE452974260800F091C7 /* Vaccination.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEBFE442974260800F091C7 /* Vaccination.swift */; };
+		DCEBFE472974272B00F091C7 /* VaccinationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEBFE462974272B00F091C7 /* VaccinationViewModel.swift */; };
+		DCEBFE4D29742EE500F091C7 /* ResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEBFE4C29742EE500F091C7 /* ResultViewModel.swift */; };
+		DCEBFE4F29742F1C00F091C7 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEBFE4E29742F1C00F091C7 /* Result.swift */; };
+		DCEBFE512974315E00F091C7 /* ResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEBFE502974315E00F091C7 /* ResultTableViewCell.swift */; };
+		DCEBFE532974B25000F091C7 /* PetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEBFE522974B25000F091C7 /* PetDetailViewController.swift */; };
+		DCEBFE552975585700F091C7 /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEBFE542975585700F091C7 /* Appointment.swift */; };
+		DCEBFE572975586100F091C7 /* AppointmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEBFE562975586100F091C7 /* AppointmentViewModel.swift */; };
+		DCEBFE5A29756DA400F091C7 /* AppointmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEBFE5829756DA400F091C7 /* AppointmentViewController.swift */; };
+		DCEBFE5D2975BBD000F091C7 /* Examination.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEBFE5C2975BBD000F091C7 /* Examination.swift */; };
+		DCEBFE5F2975BBDA00F091C7 /* ExaminationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEBFE5E2975BBDA00F091C7 /* ExaminationViewModel.swift */; };
+		DCF4094B2972D2A2008D9182 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF4094A2972D2A2008D9182 /* User.swift */; };
+		DCF4094E2972D372008D9182 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF4094D2972D372008D9182 /* UserViewModel.swift */; };
+		DCF409512972E96B008D9182 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF409502972E96B008D9182 /* Pet.swift */; };
+		DCF409532972F35E008D9182 /* PetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF409522972F35E008D9182 /* PetViewModel.swift */; };
+		DCF409552972FA71008D9182 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF409542972FA71008D9182 /* Service.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0891AC8D95660DA744EFC5E7 /* Pods-PetMed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetMed.release.xcconfig"; path = "Target Support Files/Pods-PetMed/Pods-PetMed.release.xcconfig"; sourceTree = "<group>"; };
+		6219886B8C59AA503B1E6D8D /* Pods-PetMed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetMed.debug.xcconfig"; path = "Target Support Files/Pods-PetMed/Pods-PetMed.debug.xcconfig"; sourceTree = "<group>"; };
+		96229CC92D24C29892B7BBD9 /* Pods_PetMed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PetMed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC763D3F2971C050009833AE /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		DCAA05BD296988E100B73039 /* PetMed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetMed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCAA05C0296988E100B73039 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCAA05C2296988E100B73039 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DCAA05C4296988E100B73039 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DCAA05C4296988E100B73039 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DCAA05C7296988E100B73039 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DCAA05C9296988E400B73039 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCAA05C9296988E400B73039 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = PetMed/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		DCAA05CC296988E400B73039 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCAA05CE296988E400B73039 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCAA05D429698D4400B73039 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		DCAA05D62969905800B73039 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		DCAA05D8296994AE00B73039 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		DCEA6C32296B0824008FB926 /* PetsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsTableViewCell.swift; sourceTree = "<group>"; };
+		DCEA6C34296B424F008FB926 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		DCEA6C36296B4559008FB926 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+		DCEA6C38296B4F35008FB926 /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		DCEA6C3A296C876A008FB926 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		DCEA6C3E296C8B90008FB926 /* UpcomingVisitsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingVisitsTableViewCell.swift; sourceTree = "<group>"; };
+		DCEA6C42296DF6B4008FB926 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DCEBFE402973055800F091C7 /* Vet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vet.swift; sourceTree = "<group>"; };
+		DCEBFE4229733A0400F091C7 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		DCEBFE442974260800F091C7 /* Vaccination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vaccination.swift; sourceTree = "<group>"; };
+		DCEBFE462974272B00F091C7 /* VaccinationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccinationViewModel.swift; sourceTree = "<group>"; };
+		DCEBFE4C29742EE500F091C7 /* ResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewModel.swift; sourceTree = "<group>"; };
+		DCEBFE4E29742F1C00F091C7 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		DCEBFE502974315E00F091C7 /* ResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTableViewCell.swift; sourceTree = "<group>"; };
+		DCEBFE522974B25000F091C7 /* PetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDetailViewController.swift; sourceTree = "<group>"; };
+		DCEBFE542975585700F091C7 /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
+		DCEBFE562975586100F091C7 /* AppointmentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentViewModel.swift; sourceTree = "<group>"; };
+		DCEBFE5829756DA400F091C7 /* AppointmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentViewController.swift; sourceTree = "<group>"; };
+		DCEBFE5C2975BBD000F091C7 /* Examination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Examination.swift; sourceTree = "<group>"; };
+		DCEBFE5E2975BBDA00F091C7 /* ExaminationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExaminationViewModel.swift; sourceTree = "<group>"; };
+		DCF4094A2972D2A2008D9182 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DCF4094D2972D372008D9182 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		DCF409502972E96B008D9182 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
+		DCF409522972F35E008D9182 /* PetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetViewModel.swift; sourceTree = "<group>"; };
+		DCF409542972FA71008D9182 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +93,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				036B13CA053FF47F4046E2A7 /* Pods_PetMed.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E221C9772BD4836FC2FE26E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6219886B8C59AA503B1E6D8D /* Pods-PetMed.debug.xcconfig */,
+				0891AC8D95660DA744EFC5E7 /* Pods-PetMed.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DCAA05B4296988E100B73039 = {
 			isa = PBXGroup;
 			children = (
 				DCAA05BF296988E100B73039 /* PetMed */,
 				DCAA05BE296988E100B73039 /* Products */,
+				6E221C9772BD4836FC2FE26E /* Pods */,
+				E244B0B588E9864399B55444 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +132,82 @@
 			children = (
 				DCAA05C0296988E100B73039 /* AppDelegate.swift */,
 				DCAA05C2296988E100B73039 /* SceneDelegate.swift */,
-				DCAA05C4296988E100B73039 /* ViewController.swift */,
+				DCAA05D429698D4400B73039 /* Extensions.swift */,
+				DCF409542972FA71008D9182 /* Service.swift */,
+				DCF4094F2972D375008D9182 /* ViewModels */,
+				DCF4094C2972D2A9008D9182 /* Models */,
+				DCEA6C40296C8BA2008FB926 /* TableViewCells */,
+				DCEA6C41296C8BBA008FB926 /* ViewControllers */,
 				DCAA05C6296988E100B73039 /* Main.storyboard */,
 				DCAA05C9296988E400B73039 /* Assets.xcassets */,
+				DCEA6C42296DF6B4008FB926 /* GoogleService-Info.plist */,
 				DCAA05CB296988E400B73039 /* LaunchScreen.storyboard */,
 				DCAA05CE296988E400B73039 /* Info.plist */,
 			);
 			path = PetMed;
+			sourceTree = "<group>";
+		};
+		DCEA6C40296C8BA2008FB926 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				DCEA6C32296B0824008FB926 /* PetsTableViewCell.swift */,
+				DCEA6C36296B4559008FB926 /* SettingsTableViewCell.swift */,
+				DCEA6C3E296C8B90008FB926 /* UpcomingVisitsTableViewCell.swift */,
+				DCEBFE502974315E00F091C7 /* ResultTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		DCEA6C41296C8BBA008FB926 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DC763D3F2971C050009833AE /* LoadingViewController.swift */,
+				DCAA05C4296988E100B73039 /* LoginViewController.swift */,
+				DCAA05D62969905800B73039 /* MainViewController.swift */,
+				DCAA05D8296994AE00B73039 /* TabBarController.swift */,
+				DCEA6C38296B4F35008FB926 /* ContentViewController.swift */,
+				DCEA6C34296B424F008FB926 /* SettingsViewController.swift */,
+				DCEA6C3A296C876A008FB926 /* ScheduleViewController.swift */,
+				DCEBFE4229733A0400F091C7 /* ResultViewController.swift */,
+				DCEBFE522974B25000F091C7 /* PetDetailViewController.swift */,
+				DCEBFE5829756DA400F091C7 /* AppointmentViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DCF4094C2972D2A9008D9182 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DCF4094A2972D2A2008D9182 /* User.swift */,
+				DCF409502972E96B008D9182 /* Pet.swift */,
+				DCEBFE402973055800F091C7 /* Vet.swift */,
+				DCEBFE442974260800F091C7 /* Vaccination.swift */,
+				DCEBFE4E29742F1C00F091C7 /* Result.swift */,
+				DCEBFE542975585700F091C7 /* Appointment.swift */,
+				DCEBFE5C2975BBD000F091C7 /* Examination.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DCF4094F2972D375008D9182 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				DCF4094D2972D372008D9182 /* UserViewModel.swift */,
+				DCF409522972F35E008D9182 /* PetViewModel.swift */,
+				DCEBFE462974272B00F091C7 /* VaccinationViewModel.swift */,
+				DCEBFE4C29742EE500F091C7 /* ResultViewModel.swift */,
+				DCEBFE562975586100F091C7 /* AppointmentViewModel.swift */,
+				DCEBFE5E2975BBDA00F091C7 /* ExaminationViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E244B0B588E9864399B55444 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96229CC92D24C29892B7BBD9 /* Pods_PetMed.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +217,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCAA05D1296988E400B73039 /* Build configuration list for PBXNativeTarget "PetMed" */;
 			buildPhases = (
+				EFCFF7D5970FF3F65E5921A8 /* [CP] Check Pods Manifest.lock */,
 				DCAA05B9296988E100B73039 /* Sources */,
 				DCAA05BA296988E100B73039 /* Frameworks */,
 				DCAA05BB296988E100B73039 /* Resources */,
+				EC9EBB344EF6D3481938D951 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCAA05CD296988E400B73039 /* LaunchScreen.storyboard in Resources */,
+				DCEA6C43296DF6B4008FB926 /* GoogleService-Info.plist in Resources */,
 				DCAA05CA296988E400B73039 /* Assets.xcassets in Resources */,
 				DCAA05C8296988E100B73039 /* Main.storyboard in Resources */,
 			);
@@ -133,14 +279,84 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		EC9EBB344EF6D3481938D951 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PetMed/Pods-PetMed-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PetMed/Pods-PetMed-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PetMed/Pods-PetMed-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFCFF7D5970FF3F65E5921A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PetMed-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DCAA05B9296988E100B73039 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCAA05C5296988E100B73039 /* ViewController.swift in Sources */,
+				DCEBFE572975586100F091C7 /* AppointmentViewModel.swift in Sources */,
+				DCEA6C39296B4F35008FB926 /* ContentViewController.swift in Sources */,
+				DCEA6C3F296C8B90008FB926 /* UpcomingVisitsTableViewCell.swift in Sources */,
+				DCAA05C5296988E100B73039 /* LoginViewController.swift in Sources */,
 				DCAA05C1296988E100B73039 /* AppDelegate.swift in Sources */,
+				DCEBFE5D2975BBD000F091C7 /* Examination.swift in Sources */,
+				DCEA6C37296B4559008FB926 /* SettingsTableViewCell.swift in Sources */,
+				DCEBFE412973055800F091C7 /* Vet.swift in Sources */,
+				DCF409552972FA71008D9182 /* Service.swift in Sources */,
 				DCAA05C3296988E100B73039 /* SceneDelegate.swift in Sources */,
+				DCF4094B2972D2A2008D9182 /* User.swift in Sources */,
+				DCEA6C33296B0824008FB926 /* PetsTableViewCell.swift in Sources */,
+				DCEBFE4D29742EE500F091C7 /* ResultViewModel.swift in Sources */,
+				DCEBFE5A29756DA400F091C7 /* AppointmentViewController.swift in Sources */,
+				DCEBFE532974B25000F091C7 /* PetDetailViewController.swift in Sources */,
+				DCEBFE552975585700F091C7 /* Appointment.swift in Sources */,
+				DCEBFE452974260800F091C7 /* Vaccination.swift in Sources */,
+				DCAA05D9296994AE00B73039 /* TabBarController.swift in Sources */,
+				DCEBFE4F29742F1C00F091C7 /* Result.swift in Sources */,
+				DCAA05D529698D4400B73039 /* Extensions.swift in Sources */,
+				DCF409532972F35E008D9182 /* PetViewModel.swift in Sources */,
+				DCEBFE472974272B00F091C7 /* VaccinationViewModel.swift in Sources */,
+				DCAA05D72969905800B73039 /* MainViewController.swift in Sources */,
+				DCEA6C3B296C876A008FB926 /* ScheduleViewController.swift in Sources */,
+				DCEBFE5F2975BBDA00F091C7 /* ExaminationViewModel.swift in Sources */,
+				DCEBFE4329733A0400F091C7 /* ResultViewController.swift in Sources */,
+				DC763D402971C050009833AE /* LoadingViewController.swift in Sources */,
+				DCF409512972E96B008D9182 /* Pet.swift in Sources */,
+				DCF4094E2972D372008D9182 /* UserViewModel.swift in Sources */,
+				DCEBFE512974315E00F091C7 /* ResultTableViewCell.swift in Sources */,
+				DCEA6C35296B424F008FB926 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +437,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -275,6 +492,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -284,9 +502,11 @@
 		};
 		DCAA05D2296988E400B73039 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6219886B8C59AA503B1E6D8D /* Pods-PetMed.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9M2J4B5W2F;
@@ -312,9 +532,11 @@
 		};
 		DCAA05D3296988E400B73039 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0891AC8D95660DA744EFC5E7 /* Pods-PetMed.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9M2J4B5W2F;
